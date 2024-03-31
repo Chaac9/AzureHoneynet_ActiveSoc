@@ -1,4 +1,4 @@
-# Building a SOC + Honeynet in Azure
+# Configuring a Honeynet and virtual SOC within Azure 
 
 ## Introduction
 
@@ -38,19 +38,20 @@ The security metrics used in the “Before” group are those from Azure resourc
 
 The security metrics used in the “After” group are those used when the Azure resources are hardened after being exposed for 24 hours to the public internet. The Network Security groups for the virtual machines are reconfigured to only allow access from the host device using a private connection and their built-in firewalls are re-enabled. 
 
-## Architecture Before Hardening / Security Controls
+## Architecture Before Hardening And Implementing Security Controls
 ![image](https://github.com/Chaac9/AzureHoneynet_ActiveSoc/assets/98796264/c8887777-1ccc-4b08-8171-dda867f20d2d)
 
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Map Visualizations Before Hardening And Implementing Security Controls
 ![image](https://github.com/Chaac9/AzureHoneynet_ActiveSoc/assets/98796264/bb12261e-bf7e-4baa-ab2c-0d61b05c3dbe)
 ![image](https://github.com/Chaac9/AzureHoneynet_ActiveSoc/assets/98796264/ddb8f7be-648e-433e-bfa8-ceb0e82a5ffe)
 ![image](https://github.com/Chaac9/AzureHoneynet_ActiveSoc/assets/98796264/995ed817-167f-430d-8619-5d1068df2c6f)
 ![image](https://github.com/Chaac9/AzureHoneynet_ActiveSoc/assets/98796264/ce6f4962-9c53-4ebb-84e4-73fc58136b7a)
 
-## Metrics Before Hardening / Security Controls
+## Security Metrics Before Hardening And Implementing Security Controls
 
-The following table shows the metrics we measured in our insecure environment for 24 hours:
+The security metrics within the table below are used in the observation for the exposure of resources with multiple vulnerabilties and disabled security controls within a 24 hour timeline. The timeline began on March 25, 2024 on 12:43:53 PM to March 26, 2024 on 12:43:53 PM.
+
 Start Time 2024-03-25 12:43:53
 Stop Time 2024-03-26 12:43:53
 
@@ -58,22 +59,23 @@ Stop Time 2024-03-26 12:43:53
 | ------------------------ | -----
 | SecurityEvent            | 14623
 | Syslog                   | 6394
-| SecurityAlert            | 20
+| SecurityAlert            | 0
 | SecurityIncident         | 163
 | AzureNetworkAnalytics_CL | 2711
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Map Visualizations After Hardening And Implementing Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+After implementing security controls and reducing the amount of vulnerabilities within the Azure environment and it's resources, no map visualiaztions were generated as log entries produced no results.  
 
-## Architecture After Hardening / Security Controls
+## Architecture After Hardening And Implementing Security Controls
 ![image](https://github.com/Chaac9/AzureHoneynet_ActiveSoc/assets/98796264/e944791f-bdae-4acf-8ab0-bcc1c3a89413)
 
 
 
-## Metrics After Hardening / Security Controls
+## Security Metrics After Hardening And Implementing Security Controls
 
-The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
+The security metrics in the table below are used in the measurement of the efficacy of implementing security controls and reducing vulnerabilities within an azure environment after it had been exposed for 24 hours. The security metrics are then recorded after another 24 hour timeline observing whether any logs, alerts, or incidents are generated after the Azure environment is hardened with security controls; such as enabling virtual firewalls, private endpoints, and securing network security groups. The timeline after implementing security controls began on March 26, 2024 on 12:43:53 PM and ended on March 27, 2024 12:43:53 PM. 
+
 Start Time 2024-03-26 12:43:53
 Stop Time	2024-03-27 12:43:53
 
