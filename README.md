@@ -53,6 +53,7 @@ The security metrics used in the “After” group are those used when the Azure
 The security metrics within the table below are used in the observation for the exposure of resources with multiple vulnerabilties and disabled security controls within a 24 hour timeline. The timeline began on March 25, 2024 on 12:43:53 PM to March 26, 2024 on 12:43:53 PM.
 
 Start Time 2024-03-25 12:43:53
+
 Stop Time 2024-03-26 12:43:53
 
 | Metric                   | Count
@@ -77,6 +78,7 @@ After implementing security controls and reducing the amount of vulnerabilities 
 The security metrics in the table below are used in the measurement of the efficacy of implementing security controls and reducing vulnerabilities within an azure environment after it had been exposed for 24 hours. The security metrics are then recorded after another 24 hour timeline observing whether any logs, alerts, or incidents are generated after the Azure environment is hardened with security controls; such as enabling virtual firewalls, private endpoints, and securing network security groups. The timeline after implementing security controls began on March 26, 2024 on 12:43:53 PM and ended on March 27, 2024 12:43:53 PM. 
 
 Start Time 2024-03-26 12:43:53
+
 Stop Time	2024-03-27 12:43:53
 
 | Metric                   | Count
